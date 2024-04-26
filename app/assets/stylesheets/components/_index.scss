@@ -6,10 +6,17 @@
 @import "card";
 @import "banner";
 @import "container_sm";
+@import "card_trip";
 
 
 .main-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
+}
+
+.alt-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
 }
