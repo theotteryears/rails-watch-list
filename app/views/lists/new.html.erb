@@ -1,10 +1,16 @@
-<div class="container">
-  <h1 class="text-center mt-3">Add a new movie list</h1>
+<div class="d-flex justify-content-center container_sm">
+  <div>
+    <h1 class="text-center mt-3">Add a new movie list</h1>
 
-  <%= simple_form_for @list do |f| %>
-    <%= f.input :name %>
-    <%= f.input :photo, as: :file %>
-    <%= f.submit "Add this movie list", class: "btn btn-primary w-100" %>
-  <% end %>
 
+    <%= simple_form_for @list do |f| %>
+      <%= f.input :name %>
+      <%= f.input :photo, as: :file %>
+      <%= f.submit "Add this movie list", class: "btn btn-primary w-100 rounded-pill border border-white py-3 px-5" %>
+    <% end %>
+
+    <div class="text-center p-3">
+      <%= link_to "Back to lists", lists_path %>
+    </div>
+  </div>
 </div>
